@@ -1,0 +1,22 @@
+{
+  "name": "venv",
+  "gender": null,
+  "age": null,
+  "weight": null,
+  "height": null,
+  "test_metrics": {
+    "pre_itug": null,
+    "post_itug": null,
+    "pre_isway": null,
+    "post_isway": null
+  },
+  "ratings": {
+    "initial_rating": null,
+    "final_rating": null,
+    "rejected_pair_rating_diff": null,
+    "chosen_pair_rating_diff": null,
+    "computer_pair_rating_diff": null,
+    "timeout_count": null
+  },
+  "raw_files": {}
+}
