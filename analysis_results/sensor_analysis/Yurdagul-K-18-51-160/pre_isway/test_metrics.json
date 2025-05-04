@@ -1,0 +1,14 @@
+{
+  "test_type": "Pre_ISWAY",
+  "valid": true,
+  "num_samples": 12709,
+  "duration_seconds": 127.09,
+  "PC1_mean": -3.5781521039142666e-17,
+  "PC1_std": 2.4392015240255986,
+  "PC1_range": 40.1581499965771,
+  "PC1_dominant_freq": 0.390625,
+  "PC1_spectral_entropy": -2.6391392105130964,
+  "sway_area": 1778.9118571005076,
+  "mean_distance": 1.223273749732603,
+  "path_length": 717.0695080054026
+}

@@ -1,2 +1,0 @@
-name,gender,age,weight,height,pre_itug_completeness,post_itug_completeness,pre_isway_completeness,post_isway_completeness,initial_rating,final_rating,rejected_pair_rating_diff,chosen_pair_rating_diff,computer_pair_rating_diff,timeout_count,pre_itug_pc1_mean,pre_itug_pc1_std,pre_itug_pc1_range,post_itug_pc1_mean,post_itug_pc1_std,post_itug_pc1_range,pre_isway_pc1_mean,pre_isway_pc1_std,pre_isway_pc1_range,post_isway_pc1_mean,post_isway_pc1_std,post_isway_pc1_range
-venv,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,111 @@
+{
+  "analysis_timestamp": "2025-05-03 19:41:36",
+  "sensor_data_summary": {
+    "participants_analyzed": 49,
+    "demographics": {
+      "gender_distribution": {
+        "Female": 33,
+        "Male": 16
+      },
+      "age": {
+        "min": 18.0,
+        "max": 25.0,
+        "mean": 20.693877551020407,
+        "median": 21.0
+      },
+      "weight_kg": {
+        "min": 42.0,
+        "max": 104.0,
+        "mean": 64.3265306122449,
+        "median": 60.0
+      },
+      "height_cm": {
+        "min": 150.0,
+        "max": 187.0,
+        "mean": 168.81632653061226,
+        "median": 168.0
+      }
+    },
+    "test_completion": {
+      "pre_itug": {
+        "completed": 49,
+        "completion_rate": 100.0
+      },
+      "pre_isway": {
+        "completed": 49,
+        "completion_rate": 100.0
+      },
+      "post_itug": {
+        "completed": 49,
+        "completion_rate": 100.0
+      },
+      "post_isway": {
+        "completed": 49,
+        "completion_rate": 100.0
+      }
+    },
+    "metrics": {
+      "pre_itug_stride_frequency": {
+        "mean": 1.336889281757222,
+        "median": 1.3253810470510272,
+        "min": 1.10803324099723,
+        "max": 1.6129032258064517
+      },
+      "post_itug_stride_frequency": {
+        "mean": 1.35310630836946,
+        "median": 1.3555144793592113,
+        "min": 1.0884997633696167,
+        "max": 1.5889830508474574
+      },
+      "pre_isway_sway_area": {
+        "mean": 1214.3413102675975,
+        "median": 1231.7797523729657,
+        "min": 377.64644704603734,
+        "max": 1937.7601568058217
+      },
+      "post_isway_sway_area": {
+        "mean": 1245.4906611167198,
+        "median": 1213.288289676791,
+        "min": 535.7335032431832,
+        "max": 2253.262897749477
+      }
+    }
+  },
+  "food_rating_summary": {
+    "participants_analyzed": 49,
+    "rating_statistics": {
+      "initial_ratings": {
+        "mean": 5.487969185111584,
+        "median": 5.522321428571429,
+        "min": 4.258928571428571,
+        "max": 7.107142857142857
+      },
+      "final_ratings": {
+        "mean": 5.288448306292408,
+        "median": 5.28125,
+        "min": 3.455357142857143,
+        "max": 7.138392857142857
+      }
+    },
+    "chosen_vs_rejected": {
+      "chosen_pairs_diff": {
+        "mean": -0.3072898138851138,
+        "median": -0.2830188679245283,
+        "min": -1.3181818181818181,
+        "max": 0.6363636363636364
+      },
+      "rejected_pairs_diff": {
+        "mean": -0.5013406911479263,
+        "median": -0.45454545454545453,
+        "min": -2.42,
+        "max": 1.0784313725490196
+      },
+      "computer_pairs_diff": {
+        "mean": -0.02040816326530612,
+        "median": 0.0,
+        "min": -3.0,
+        "max": 4.0
+      }
+    }
+  }
+}

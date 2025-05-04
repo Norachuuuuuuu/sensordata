@@ -1,0 +1,13 @@
+{
+  "test_type": "Pre_ITUG",
+  "valid": true,
+  "num_samples": 1889,
+  "duration_seconds": 18.89,
+  "PC1_mean": 6.018360916972792e-17,
+  "PC1_std": 2.268907279404105,
+  "PC1_range": 13.857079669207302,
+  "PC1_dominant_freq": 0.390625,
+  "PC1_spectral_entropy": -0.26504755059061463,
+  "stride_frequency": 1.1840688912809472,
+  "num_strides": 22
+}

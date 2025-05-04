@@ -1,0 +1,1234 @@
+{
+  "participant_info": {
+    "name": "Zehra",
+    "gender": "Female",
+    "gender_code": "K",
+    "age": 22,
+    "weight": 58,
+    "height": 165,
+    "bmi": 21.3
+  },
+  "summary": {
+    "average_initial_rating": 6.3991031390134525,
+    "average_final_rating": 6.37219730941704,
+    "average_chosen_difference": 0.16666666666666666,
+    "average_rejected_difference": -0.36363636363636365,
+    "average_computer_difference": 1.0,
+    "timeout_count": 4
+  },
+  "ratings": {
+    "initial": {
+      "1-muz": 8,
+      "2-Ceri domates": 7,
+      "3-Domates": 1,
+      "4-Findik": 8,
+      "5-pattis kizartmasi": 8,
+      "6-Cili biberi": 1,
+      "7-dereotu": 8,
+      "8-kizarmisekmek": 5,
+      "9-tarcin": 1,
+      "10-yulaf": 3,
+      "11-tarhana": 8,
+      "12-domatescorbasi": 4,
+      "13-Ezogelin": 8,
+      "14-mercimek": 8,
+      "15-yayla": 8,
+      "16-yunansalata": 8,
+      "17-ayran": 8,
+      "18-boza": 1,
+      "19-cay": 8,
+      "20-cileklimilkshake": 1,
+      "21-Elmasuyu": 5,
+      "22-icelatte": 8,
+      "23-karadutsuyu": 8,
+      "24-kola": 8,
+      "25-limonlugazoz": 8,
+      "26-madensuyu": 8,
+      "27-portakalsuyu": 8,
+      "28-salep": 8,
+      "29-sicakcikolata": 5,
+      "30-sogukcay": 8,
+      "31-sut": 8,
+      "32-turkkahvesi": 8,
+      "33-visnesuyu": 8,
+      "34-frambuaz": 8,
+      "35-havuc": 8,
+      "36-hurma": 6,
+      "37-incir": 8,
+      "38-karpuz": 8,
+      "39-kavun": 8,
+      "40-kestane": 8,
+      "41-kiraz": 8,
+      "42-kirmizielma": 8,
+      "43-kivi": 8,
+      "44-kurusogan": 8,
+      "45-limon": 5,
+      "46-mandalina": 8,
+      "47-mango": 8,
+      "48-marul": 7,
+      "49-maydanoz": 5,
+      "50-misir": 8,
+      "51-nar": 6,
+      "52-patlican": 8,
+      "53-portakal": 8,
+      "54-salatalik": 8,
+      "55-sarikiwi": 8,
+      "56-turp": 8,
+      "57-uzum": 6,
+      "58-yabanmersini": 7,
+      "59-yesilelma": 5,
+      "60-yesilerik": 8,
+      "61-acma": 8,
+      "62-findikezmesi": 8,
+      "63-fistikezmesi": 7,
+      "64-haslanmisyumurta": 8,
+      "65-karisiktost": 5,
+      "66-kasarlitost": 8,
+      "67-kuymak": 8,
+      "68-menemen": 8,
+      "69-nutella": 6,
+      "70-pastirma": 1,
+      "71-pogaca": 8,
+      "72-sahandayumurta": 5,
+      "73-salam": 1,
+      "76-simit": 8,
+      "77-siyahzeytin": 5,
+      "78-sosis": 1,
+      "79-yesilzeytin": 1,
+      "80-yumurta": 8,
+      "81-antepfistik": 8,
+      "82-aycekirdek": 5,
+      "83-badem": 8,
+      "84-Ceviz": 8,
+      "85-kaju": 6,
+      "86-kuruincir": 5,
+      "87-kurukayisi": 2,
+      "88-kuruuzum": 8,
+      "89-leblebi": 1,
+      "90-baklava": 8,
+      "91-yerfistik": 8,
+      "92-beyazcikolata": 8,
+      "93-bittercikolata": 8,
+      "94-brownie": 7,
+      "95-cilekliturta": 5,
+      "96-cubukdondurma": 8,
+      "97-damlacikolatakurabiye": 8,
+      "98-dondurmalikurabiye": 7,
+      "99-ekmekkadayifi": 7,
+      "100-elmalikurabiye": 5,
+      "101-gullac": 8,
+      "102-havuclukek": 5,
+      "103-jelibon": 1,
+      "104-kapkek": 1,
+      "105-kirazturta": 1,
+      "106-kisir": 8,
+      "107-kozmisir": 6,
+      "108-kulahtadondurma": 8,
+      "109-kunefe": 8,
+      "110-lolipop": 1,
+      "111-macun": 1,
+      "112-makarnasalatasi": 8,
+      "113-makaron": 8,
+      "114-meyvelipasta": 8,
+      "115-milkchocolate": 5,
+      "116-morlahanatursusu": 8,
+      "117-muffin": 8,
+      "118-pamukseker": 1,
+      "119-pankek": 8,
+      "120-patatescipsi": 5,
+      "121-patatessalatasi": 5,
+      "122-patlamismisir": 2,
+      "123-salataliktursusu": 8,
+      "124-simitsandvic": 8,
+      "125-sogukkadayif": 6,
+      "126-suborek": 8,
+      "127-sutlac": 8,
+      "128-tulumba": 3,
+      "129-unkurabiyesi": 5,
+      "130-uzumlukek": 8,
+      "131-yogurt": 8,
+      "132-kefir": 6,
+      "133-adana": 8,
+      "134-bulgurpilav": 8,
+      "135-chickenshish": 8,
+      "136-cigkofte": 8,
+      "137-citirtavuk": 8,
+      "138-doner": 8,
+      "139-durum": 8,
+      "140-etlinohut": 8,
+      "141-firindatavuk": 5,
+      "142-gyoza": 8,
+      "143-hamburger": 8,
+      "144-iclikofte": 8,
+      "146-ispanakyemek": 5,
+      "147-izgarakofte": 8,
+      "148-karidesvepilav": 5,
+      "149-karisikkebap": 8,
+      "150-katsuchicken": 8,
+      "151-kurufasulye": 8,
+      "152-kusbasi": 8,
+      "153-lahmacun": 8,
+      "154-manti": 8,
+      "155-patatespure": 1,
+      "156-pilav": 5,
+      "157-pirasayemeki": 6,
+      "158-pizza": 8,
+      "159-ramen": 8,
+      "160-sebzeliramen": 8,
+      "161-sosisli": 1,
+      "162-spagetti": 8,
+      "163-spagettisebze": 8,
+      "165-tantuni": 8,
+      "166-tavukbut": 8,
+      "167-tavukguvec": 8,
+      "168-tavuksandvic": 8,
+      "169-ananas": 8,
+      "170-armut": 5,
+      "171-ayva": 5,
+      "172-borek": 8,
+      "173-brokoli": 8,
+      "174-cilek": 8,
+      "176-sucuk": 1,
+      "177-yaglama": 8,
+      "178-asure": 8,
+      "179-rokfor": 1,
+      "180-lazanya": 8,
+      "181-adaspolo": 1,
+      "182-ajil": 8,
+      "183-blueberrysuyu": 8,
+      "184-cileksuyu": 8,
+      "185-domatessuyu": 1,
+      "186-dut": 5,
+      "187-eriksuyu": 8,
+      "188-ferni": 8,
+      "189-fistiklibaklava": 8,
+      "190-fincanlikek": 5,
+      "191-gheymeh": 8,
+      "192-greyfurtsuyu": 1,
+      "193-hashaslikurabiye": 7,
+      "194-havuchelvasi": 5,
+      "195-havucsuyu": 5,
+      "196-kelepaca": 8,
+      "197-kiwisuyu": 5,
+      "198-koftetabrizi": 8,
+      "199-koobidehkebabi": 8,
+      "200-kotlet": 8,
+      "201-limonsuyu": 8,
+      "202-narsuyu": 5,
+      "203-nuhutpilav": 8,
+      "204-patateslipilavi": 1,
+      "205-piroski": 8,
+      "206-pismaniye": 1,
+      "207-profiterol": 5,
+      "208-recelikurabiye": 5,
+      "209-saffronludondurma": 8,
+      "210-sule": 1,
+      "211-tavukkebab": 8,
+      "212-tazefasuliyelipilavi": 8,
+      "213-tazesebzesuyu": 5,
+      "214-acaibowl": 6,
+      "215-bilmiyorum": 1,
+      "216-Chicago": 7,
+      "217-cobaninturta": 8,
+      "218-donut": 5,
+      "219-enchiladas": 5,
+      "220-guaco": 8,
+      "221-pisi": 7,
+      "222-sushi": 5,
+      "223-tiramisu": 8,
+      "224-takoyaki": 8,
+      "225-okonomiyaki": 7,
+      "226-sekerpare": 5,
+      "227-carbonara": 8,
+      "228-cacik": 8
+    },
+    "final": {
+      "1-muz": 8,
+      "2-Ceri domates": 7,
+      "3-Domates": 6,
+      "4-Findik": 8,
+      "5-pattis kizartmasi": 7,
+      "6-Cili biberi": 4,
+      "7-dereotu": 8,
+      "8-kizarmisekmek": 8,
+      "9-tarcin": 1,
+      "10-yulaf": 5,
+      "11-tarhana": 8,
+      "12-domatescorbasi": 5,
+      "13-Ezogelin": 8,
+      "14-mercimek": 6,
+      "15-yayla": 8,
+      "16-yunansalata": 7,
+      "17-ayran": 8,
+      "18-boza": 1,
+      "19-cay": 8,
+      "20-cileklimilkshake": 1,
+      "21-Elmasuyu": 8,
+      "22-icelatte": 8,
+      "23-karadutsuyu": 8,
+      "24-kola": 8,
+      "25-limonlugazoz": 8,
+      "26-madensuyu": 8,
+      "27-portakalsuyu": 6,
+      "28-salep": 1,
+      "29-sicakcikolata": 8,
+      "30-sogukcay": 8,
+      "31-sut": 7,
+      "32-turkkahvesi": 8,
+      "33-visnesuyu": 8,
+      "34-frambuaz": 8,
+      "35-havuc": 8,
+      "36-hurma": 5,
+      "37-incir": 8,
+      "38-karpuz": 8,
+      "39-kavun": 8,
+      "40-kestane": 8,
+      "41-kiraz": 8,
+      "42-kirmizielma": 8,
+      "43-kivi": 8,
+      "44-kurusogan": 8,
+      "45-limon": 5,
+      "46-mandalina": 8,
+      "47-mango": 5,
+      "48-marul": 8,
+      "49-maydanoz": 8,
+      "50-misir": 7,
+      "51-nar": 5,
+      "52-patlican": 8,
+      "53-portakal": 8,
+      "54-salatalik": 8,
+      "55-sarikiwi": 8,
+      "56-turp": 5,
+      "57-uzum": 8,
+      "58-yabanmersini": 6,
+      "59-yesilelma": 8,
+      "60-yesilerik": 8,
+      "61-acma": 8,
+      "62-findikezmesi": 8,
+      "63-fistikezmesi": 5,
+      "64-haslanmisyumurta": 8,
+      "65-karisiktost": 5,
+      "66-kasarlitost": 8,
+      "67-kuymak": 8,
+      "68-menemen": 8,
+      "69-nutella": 8,
+      "70-pastirma": 1,
+      "71-pogaca": 8,
+      "72-sahandayumurta": 8,
+      "73-salam": 1,
+      "76-simit": 8,
+      "77-siyahzeytin": 5,
+      "78-sosis": 1,
+      "79-yesilzeytin": 1,
+      "80-yumurta": 8,
+      "81-antepfistik": 8,
+      "82-aycekirdek": 6,
+      "83-badem": 8,
+      "84-Ceviz": 8,
+      "85-kaju": 5,
+      "86-kuruincir": 6,
+      "87-kurukayisi": 1,
+      "88-kuruuzum": 8,
+      "89-leblebi": 1,
+      "90-baklava": 8,
+      "91-yerfistik": 5,
+      "92-beyazcikolata": 5,
+      "93-bittercikolata": 8,
+      "94-brownie": 8,
+      "95-cilekliturta": 6,
+      "96-cubukdondurma": 8,
+      "97-damlacikolatakurabiye": 8,
+      "98-dondurmalikurabiye": 5,
+      "99-ekmekkadayifi": 6,
+      "100-elmalikurabiye": 8,
+      "101-gullac": 8,
+      "102-havuclukek": 5,
+      "103-jelibon": 1,
+      "104-kapkek": 1,
+      "105-kirazturta": 1,
+      "106-kisir": 8,
+      "107-kozmisir": 8,
+      "108-kulahtadondurma": 8,
+      "109-kunefe": 8,
+      "110-lolipop": 1,
+      "111-macun": 8,
+      "112-makarnasalatasi": 8,
+      "113-makaron": 1,
+      "114-meyvelipasta": 5,
+      "115-milkchocolate": 4,
+      "116-morlahanatursusu": 8,
+      "117-muffin": 8,
+      "118-pamukseker": 1,
+      "119-pankek": 8,
+      "120-patatescipsi": 5,
+      "121-patatessalatasi": 8,
+      "122-patlamismisir": 5,
+      "123-salataliktursusu": 8,
+      "124-simitsandvic": 5,
+      "125-sogukkadayif": 8,
+      "126-suborek": 8,
+      "127-sutlac": 8,
+      "128-tulumba": 1,
+      "129-unkurabiyesi": 4,
+      "130-uzumlukek": 8,
+      "131-yogurt": 8,
+      "132-kefir": 7,
+      "133-adana": 8,
+      "134-bulgurpilav": 8,
+      "135-chickenshish": 8,
+      "136-cigkofte": 8,
+      "137-citirtavuk": 8,
+      "138-doner": 6,
+      "139-durum": 8,
+      "140-etlinohut": 8,
+      "141-firindatavuk": 8,
+      "142-gyoza": 6,
+      "143-hamburger": 8,
+      "144-iclikofte": 8,
+      "146-ispanakyemek": 6,
+      "147-izgarakofte": 8,
+      "148-karidesvepilav": 5,
+      "149-karisikkebap": 8,
+      "150-katsuchicken": 5,
+      "151-kurufasulye": 8,
+      "152-kusbasi": 8,
+      "153-lahmacun": 8,
+      "154-manti": 8,
+      "155-patatespure": 1,
+      "156-pilav": 5,
+      "157-pirasayemeki": 6,
+      "158-pizza": 8,
+      "159-ramen": 5,
+      "160-sebzeliramen": 8,
+      "161-sosisli": 1,
+      "162-spagetti": 8,
+      "163-spagettisebze": 8,
+      "165-tantuni": 8,
+      "166-tavukbut": 5,
+      "167-tavukguvec": 8,
+      "168-tavuksandvic": 8,
+      "169-ananas": 8,
+      "170-armut": 8,
+      "171-ayva": 8,
+      "172-borek": 8,
+      "173-brokoli": 8,
+      "174-cilek": 8,
+      "176-sucuk": 1,
+      "177-yaglama": 8,
+      "178-asure": 8,
+      "179-rokfor": 1,
+      "180-lazanya": 8,
+      "181-adaspolo": 1,
+      "182-ajil": 8,
+      "183-blueberrysuyu": 8,
+      "184-cileksuyu": 5,
+      "185-domatessuyu": 5,
+      "186-dut": 1,
+      "187-eriksuyu": 6,
+      "188-ferni": 8,
+      "189-fistiklibaklava": 8,
+      "190-fincanlikek": 5,
+      "191-gheymeh": 8,
+      "192-greyfurtsuyu": 8,
+      "193-hashaslikurabiye": 8,
+      "194-havuchelvasi": 5,
+      "195-havucsuyu": 8,
+      "196-kelepaca": 8,
+      "197-kiwisuyu": 5,
+      "198-koftetabrizi": 8,
+      "199-koobidehkebabi": 8,
+      "200-kotlet": 5,
+      "201-limonsuyu": 5,
+      "202-narsuyu": 8,
+      "203-nuhutpilav": 8,
+      "204-patateslipilavi": 6,
+      "205-piroski": 8,
+      "206-pismaniye": 1,
+      "207-profiterol": 8,
+      "208-recelikurabiye": 1,
+      "209-saffronludondurma": 8,
+      "210-sule": 4,
+      "211-tavukkebab": 8,
+      "212-tazefasuliyelipilavi": 5,
+      "213-tazesebzesuyu": 5,
+      "214-acaibowl": 8,
+      "215-bilmiyorum": 1,
+      "216-Chicago": 5,
+      "217-cobaninturta": 5,
+      "218-donut": 1,
+      "219-enchiladas": 5,
+      "220-guaco": 8,
+      "221-pisi": 8,
+      "222-sushi": 6,
+      "223-tiramisu": 8,
+      "224-takoyaki": 6,
+      "225-okonomiyaki": 5,
+      "226-sekerpare": 6,
+      "227-carbonara": 1,
+      "228-cacik": 8
+    },
+    "differences": {
+      "1-muz": 0,
+      "2-Ceri domates": 0,
+      "3-Domates": 5,
+      "4-Findik": 0,
+      "5-pattis kizartmasi": -1,
+      "6-Cili biberi": 3,
+      "7-dereotu": 0,
+      "8-kizarmisekmek": 3,
+      "9-tarcin": 0,
+      "10-yulaf": 2,
+      "11-tarhana": 0,
+      "12-domatescorbasi": 1,
+      "13-Ezogelin": 0,
+      "14-mercimek": -2,
+      "15-yayla": 0,
+      "16-yunansalata": -1,
+      "17-ayran": 0,
+      "18-boza": 0,
+      "19-cay": 0,
+      "20-cileklimilkshake": 0,
+      "21-Elmasuyu": 3,
+      "22-icelatte": 0,
+      "23-karadutsuyu": 0,
+      "24-kola": 0,
+      "25-limonlugazoz": 0,
+      "26-madensuyu": 0,
+      "27-portakalsuyu": -2,
+      "28-salep": -7,
+      "29-sicakcikolata": 3,
+      "30-sogukcay": 0,
+      "31-sut": -1,
+      "32-turkkahvesi": 0,
+      "33-visnesuyu": 0,
+      "34-frambuaz": 0,
+      "35-havuc": 0,
+      "36-hurma": -1,
+      "37-incir": 0,
+      "38-karpuz": 0,
+      "39-kavun": 0,
+      "40-kestane": 0,
+      "41-kiraz": 0,
+      "42-kirmizielma": 0,
+      "43-kivi": 0,
+      "44-kurusogan": 0,
+      "45-limon": 0,
+      "46-mandalina": 0,
+      "47-mango": -3,
+      "48-marul": 1,
+      "49-maydanoz": 3,
+      "50-misir": -1,
+      "51-nar": -1,
+      "52-patlican": 0,
+      "53-portakal": 0,
+      "54-salatalik": 0,
+      "55-sarikiwi": 0,
+      "56-turp": -3,
+      "57-uzum": 2,
+      "58-yabanmersini": -1,
+      "59-yesilelma": 3,
+      "60-yesilerik": 0,
+      "61-acma": 0,
+      "62-findikezmesi": 0,
+      "63-fistikezmesi": -2,
+      "64-haslanmisyumurta": 0,
+      "65-karisiktost": 0,
+      "66-kasarlitost": 0,
+      "67-kuymak": 0,
+      "68-menemen": 0,
+      "69-nutella": 2,
+      "70-pastirma": 0,
+      "71-pogaca": 0,
+      "72-sahandayumurta": 3,
+      "73-salam": 0,
+      "76-simit": 0,
+      "77-siyahzeytin": 0,
+      "78-sosis": 0,
+      "79-yesilzeytin": 0,
+      "80-yumurta": 0,
+      "81-antepfistik": 0,
+      "82-aycekirdek": 1,
+      "83-badem": 0,
+      "84-Ceviz": 0,
+      "85-kaju": -1,
+      "86-kuruincir": 1,
+      "87-kurukayisi": -1,
+      "88-kuruuzum": 0,
+      "89-leblebi": 0,
+      "90-baklava": 0,
+      "91-yerfistik": -3,
+      "92-beyazcikolata": -3,
+      "93-bittercikolata": 0,
+      "94-brownie": 1,
+      "95-cilekliturta": 1,
+      "96-cubukdondurma": 0,
+      "97-damlacikolatakurabiye": 0,
+      "98-dondurmalikurabiye": -2,
+      "99-ekmekkadayifi": -1,
+      "100-elmalikurabiye": 3,
+      "101-gullac": 0,
+      "102-havuclukek": 0,
+      "103-jelibon": 0,
+      "104-kapkek": 0,
+      "105-kirazturta": 0,
+      "106-kisir": 0,
+      "107-kozmisir": 2,
+      "108-kulahtadondurma": 0,
+      "109-kunefe": 0,
+      "110-lolipop": 0,
+      "111-macun": 7,
+      "112-makarnasalatasi": 0,
+      "113-makaron": -7,
+      "114-meyvelipasta": -3,
+      "115-milkchocolate": -1,
+      "116-morlahanatursusu": 0,
+      "117-muffin": 0,
+      "118-pamukseker": 0,
+      "119-pankek": 0,
+      "120-patatescipsi": 0,
+      "121-patatessalatasi": 3,
+      "122-patlamismisir": 3,
+      "123-salataliktursusu": 0,
+      "124-simitsandvic": -3,
+      "125-sogukkadayif": 2,
+      "126-suborek": 0,
+      "127-sutlac": 0,
+      "128-tulumba": -2,
+      "129-unkurabiyesi": -1,
+      "130-uzumlukek": 0,
+      "131-yogurt": 0,
+      "132-kefir": 1,
+      "133-adana": 0,
+      "134-bulgurpilav": 0,
+      "135-chickenshish": 0,
+      "136-cigkofte": 0,
+      "137-citirtavuk": 0,
+      "138-doner": -2,
+      "139-durum": 0,
+      "140-etlinohut": 0,
+      "141-firindatavuk": 3,
+      "142-gyoza": -2,
+      "143-hamburger": 0,
+      "144-iclikofte": 0,
+      "146-ispanakyemek": 1,
+      "147-izgarakofte": 0,
+      "148-karidesvepilav": 0,
+      "149-karisikkebap": 0,
+      "150-katsuchicken": -3,
+      "151-kurufasulye": 0,
+      "152-kusbasi": 0,
+      "153-lahmacun": 0,
+      "154-manti": 0,
+      "155-patatespure": 0,
+      "156-pilav": 0,
+      "157-pirasayemeki": 0,
+      "158-pizza": 0,
+      "159-ramen": -3,
+      "160-sebzeliramen": 0,
+      "161-sosisli": 0,
+      "162-spagetti": 0,
+      "163-spagettisebze": 0,
+      "165-tantuni": 0,
+      "166-tavukbut": -3,
+      "167-tavukguvec": 0,
+      "168-tavuksandvic": 0,
+      "169-ananas": 0,
+      "170-armut": 3,
+      "171-ayva": 3,
+      "172-borek": 0,
+      "173-brokoli": 0,
+      "174-cilek": 0,
+      "176-sucuk": 0,
+      "177-yaglama": 0,
+      "178-asure": 0,
+      "179-rokfor": 0,
+      "180-lazanya": 0,
+      "181-adaspolo": 0,
+      "182-ajil": 0,
+      "183-blueberrysuyu": 0,
+      "184-cileksuyu": -3,
+      "185-domatessuyu": 4,
+      "186-dut": -4,
+      "187-eriksuyu": -2,
+      "188-ferni": 0,
+      "189-fistiklibaklava": 0,
+      "190-fincanlikek": 0,
+      "191-gheymeh": 0,
+      "192-greyfurtsuyu": 7,
+      "193-hashaslikurabiye": 1,
+      "194-havuchelvasi": 0,
+      "195-havucsuyu": 3,
+      "196-kelepaca": 0,
+      "197-kiwisuyu": 0,
+      "198-koftetabrizi": 0,
+      "199-koobidehkebabi": 0,
+      "200-kotlet": -3,
+      "201-limonsuyu": -3,
+      "202-narsuyu": 3,
+      "203-nuhutpilav": 0,
+      "204-patateslipilavi": 5,
+      "205-piroski": 0,
+      "206-pismaniye": 0,
+      "207-profiterol": 3,
+      "208-recelikurabiye": -4,
+      "209-saffronludondurma": 0,
+      "210-sule": 3,
+      "211-tavukkebab": 0,
+      "212-tazefasuliyelipilavi": -3,
+      "213-tazesebzesuyu": 0,
+      "214-acaibowl": 2,
+      "215-bilmiyorum": 0,
+      "216-Chicago": -2,
+      "217-cobaninturta": -3,
+      "218-donut": -4,
+      "219-enchiladas": 0,
+      "220-guaco": 0,
+      "221-pisi": 1,
+      "222-sushi": 1,
+      "223-tiramisu": 0,
+      "224-takoyaki": -2,
+      "225-okonomiyaki": -2,
+      "226-sekerpare": 1,
+      "227-carbonara": -7,
+      "228-cacik": 0
+    }
+  },
+  "chosen_pairs": [
+    {
+      "item": "172-borek",
+      "difference": 0
+    },
+    {
+      "item": "173-brokoli",
+      "difference": 0
+    },
+    {
+      "item": "209-saffronludondurma",
+      "difference": 0
+    },
+    {
+      "item": "140-etlinohut",
+      "difference": 0
+    },
+    {
+      "item": "177-yaglama",
+      "difference": 0
+    },
+    {
+      "item": "68-menemen",
+      "difference": 0
+    },
+    {
+      "item": "189-fistiklibaklava",
+      "difference": 0
+    },
+    {
+      "item": "67-kuymak",
+      "difference": 0
+    },
+    {
+      "item": "127-sutlac",
+      "difference": 0
+    },
+    {
+      "item": "168-tavuksandvic",
+      "difference": 0
+    },
+    {
+      "item": "123-salataliktursusu",
+      "difference": 0
+    },
+    {
+      "item": "142-gyoza",
+      "difference": -2
+    },
+    {
+      "item": "38-karpuz",
+      "difference": 0
+    },
+    {
+      "item": "119-pankek",
+      "difference": 0
+    },
+    {
+      "item": "223-tiramisu",
+      "difference": 0
+    },
+    {
+      "item": "4-Findik",
+      "difference": 0
+    },
+    {
+      "item": "53-portakal",
+      "difference": 0
+    },
+    {
+      "item": "1-muz",
+      "difference": 0
+    },
+    {
+      "item": "221-pisi",
+      "difference": 1
+    },
+    {
+      "item": "193-hashaslikurabiye",
+      "difference": 1
+    },
+    {
+      "item": "94-brownie",
+      "difference": 1
+    },
+    {
+      "item": "48-marul",
+      "difference": 1
+    },
+    {
+      "item": "139-durum",
+      "difference": 0
+    },
+    {
+      "item": "41-kiraz",
+      "difference": 0
+    },
+    {
+      "item": "16-yunansalata",
+      "difference": -1
+    },
+    {
+      "item": "214-acaibowl",
+      "difference": 2
+    },
+    {
+      "item": "109-kunefe",
+      "difference": 0
+    },
+    {
+      "item": "19-cay",
+      "difference": 0
+    },
+    {
+      "item": "83-badem",
+      "difference": 0
+    },
+    {
+      "item": "178-asure",
+      "difference": 0
+    },
+    {
+      "item": "144-iclikofte",
+      "difference": 0
+    },
+    {
+      "item": "5-pattis kizartmasi",
+      "difference": -1
+    },
+    {
+      "item": "143-hamburger",
+      "difference": 0
+    },
+    {
+      "item": "153-lahmacun",
+      "difference": 0
+    },
+    {
+      "item": "17-ayran",
+      "difference": 0
+    },
+    {
+      "item": "106-kisir",
+      "difference": 0
+    },
+    {
+      "item": "147-izgarakofte",
+      "difference": 0
+    },
+    {
+      "item": "26-madensuyu",
+      "difference": 0
+    },
+    {
+      "item": "88-kuruuzum",
+      "difference": 0
+    },
+    {
+      "item": "97-damlacikolatakurabiye",
+      "difference": 0
+    },
+    {
+      "item": "71-pogaca",
+      "difference": 0
+    },
+    {
+      "item": "39-kavun",
+      "difference": 0
+    },
+    {
+      "item": "174-cilek",
+      "difference": 0
+    },
+    {
+      "item": "90-baklava",
+      "difference": 0
+    },
+    {
+      "item": "37-incir",
+      "difference": 0
+    },
+    {
+      "item": "211-tavukkebab",
+      "difference": 0
+    },
+    {
+      "item": "133-adana",
+      "difference": 0
+    },
+    {
+      "item": "92-beyazcikolata",
+      "difference": -3
+    },
+    {
+      "item": "6-Cili biberi",
+      "difference": 3
+    },
+    {
+      "item": "105-kirazturta",
+      "difference": 0
+    },
+    {
+      "item": "163-spagettisebze",
+      "difference": 0
+    },
+    {
+      "item": "42-kirmizielma",
+      "difference": 0
+    },
+    {
+      "item": "228-cacik",
+      "difference": 0
+    },
+    {
+      "item": "35-havuc",
+      "difference": 0
+    },
+    {
+      "item": "117-muffin",
+      "difference": 0
+    },
+    {
+      "item": "101-gullac",
+      "difference": 0
+    },
+    {
+      "item": "192-greyfurtsuyu",
+      "difference": 7
+    },
+    {
+      "item": "43-kivi",
+      "difference": 0
+    },
+    {
+      "item": "34-frambuaz",
+      "difference": 0
+    },
+    {
+      "item": "108-kulahtadondurma",
+      "difference": 0
+    },
+    {
+      "item": "69-nutella",
+      "difference": 2
+    },
+    {
+      "item": "44-kurusogan",
+      "difference": 0
+    },
+    {
+      "item": "55-sarikiwi",
+      "difference": 0
+    },
+    {
+      "item": "158-pizza",
+      "difference": 0
+    },
+    {
+      "item": "11-tarhana",
+      "difference": 0
+    },
+    {
+      "item": "134-bulgurpilav",
+      "difference": 0
+    }
+  ],
+  "rejected_pairs": [
+    {
+      "item": "130-uzumlukek",
+      "difference": 0
+    },
+    {
+      "item": "13-Ezogelin",
+      "difference": 0
+    },
+    {
+      "item": "166-tavukbut",
+      "difference": -3
+    },
+    {
+      "item": "184-cileksuyu",
+      "difference": -3
+    },
+    {
+      "item": "31-sut",
+      "difference": -1
+    },
+    {
+      "item": "27-portakalsuyu",
+      "difference": -2
+    },
+    {
+      "item": "183-blueberrysuyu",
+      "difference": 0
+    },
+    {
+      "item": "114-meyvelipasta",
+      "difference": -3
+    },
+    {
+      "item": "126-suborek",
+      "difference": 0
+    },
+    {
+      "item": "46-mandalina",
+      "difference": 0
+    },
+    {
+      "item": "56-turp",
+      "difference": -3
+    },
+    {
+      "item": "81-antepfistik",
+      "difference": 0
+    },
+    {
+      "item": "162-spagetti",
+      "difference": 0
+    },
+    {
+      "item": "160-sebzeliramen",
+      "difference": 0
+    },
+    {
+      "item": "132-kefir",
+      "difference": 1
+    },
+    {
+      "item": "57-uzum",
+      "difference": 2
+    },
+    {
+      "item": "125-sogukkadayif",
+      "difference": 2
+    },
+    {
+      "item": "50-misir",
+      "difference": -1
+    },
+    {
+      "item": "40-kestane",
+      "difference": 0
+    },
+    {
+      "item": "216-Chicago",
+      "difference": -2
+    },
+    {
+      "item": "98-dondurmalikurabiye",
+      "difference": -2
+    },
+    {
+      "item": "63-fistikezmesi",
+      "difference": -2
+    },
+    {
+      "item": "36-hurma",
+      "difference": -1
+    },
+    {
+      "item": "28-salep",
+      "difference": -7
+    },
+    {
+      "item": "124-simitsandvic",
+      "difference": -3
+    },
+    {
+      "item": "200-kotlet",
+      "difference": -3
+    },
+    {
+      "item": "227-carbonara",
+      "difference": -7
+    },
+    {
+      "item": "225-okonomiyaki",
+      "difference": -2
+    },
+    {
+      "item": "51-nar",
+      "difference": -1
+    },
+    {
+      "item": "47-mango",
+      "difference": -3
+    },
+    {
+      "item": "150-katsuchicken",
+      "difference": -3
+    },
+    {
+      "item": "99-ekmekkadayifi",
+      "difference": -1
+    },
+    {
+      "item": "224-takoyaki",
+      "difference": -2
+    },
+    {
+      "item": "93-bittercikolata",
+      "difference": 0
+    },
+    {
+      "item": "203-nuhutpilav",
+      "difference": 0
+    },
+    {
+      "item": "66-kasarlitost",
+      "difference": 0
+    },
+    {
+      "item": "84-Ceviz",
+      "difference": 0
+    },
+    {
+      "item": "103-jelibon",
+      "difference": 0
+    },
+    {
+      "item": "181-adaspolo",
+      "difference": 0
+    },
+    {
+      "item": "176-sucuk",
+      "difference": 0
+    },
+    {
+      "item": "73-salam",
+      "difference": 0
+    },
+    {
+      "item": "185-domatessuyu",
+      "difference": 4
+    },
+    {
+      "item": "110-lolipop",
+      "difference": 0
+    },
+    {
+      "item": "118-pamukseker",
+      "difference": 0
+    },
+    {
+      "item": "111-macun",
+      "difference": 7
+    },
+    {
+      "item": "79-yesilzeytin",
+      "difference": 0
+    },
+    {
+      "item": "179-rokfor",
+      "difference": 0
+    },
+    {
+      "item": "206-pismaniye",
+      "difference": 0
+    },
+    {
+      "item": "24-kola",
+      "difference": 0
+    },
+    {
+      "item": "15-yayla",
+      "difference": 0
+    },
+    {
+      "item": "89-leblebi",
+      "difference": 0
+    },
+    {
+      "item": "122-patlamismisir",
+      "difference": 3
+    },
+    {
+      "item": "210-sule",
+      "difference": 3
+    },
+    {
+      "item": "18-boza",
+      "difference": 0
+    },
+    {
+      "item": "20-cileklimilkshake",
+      "difference": 0
+    },
+    {
+      "item": "78-sosis",
+      "difference": 0
+    },
+    {
+      "item": "188-ferni",
+      "difference": 0
+    },
+    {
+      "item": "204-patateslipilavi",
+      "difference": 5
+    },
+    {
+      "item": "70-pastirma",
+      "difference": 0
+    },
+    {
+      "item": "155-patatespure",
+      "difference": 0
+    },
+    {
+      "item": "161-sosisli",
+      "difference": 0
+    },
+    {
+      "item": "3-Domates",
+      "difference": 5
+    },
+    {
+      "item": "215-bilmiyorum",
+      "difference": 0
+    },
+    {
+      "item": "104-kapkek",
+      "difference": 0
+    },
+    {
+      "item": "9-tarcin",
+      "difference": 0
+    },
+    {
+      "item": "87-kurukayisi",
+      "difference": -1
+    }
+  ],
+  "computer_chosen_pairs": [
+    {
+      "item": "12-domatescorbasi",
+      "difference": 1
+    }
+  ]
+}

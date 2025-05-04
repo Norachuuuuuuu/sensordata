@@ -2486,3 +2486,46 @@ class ParticipantDataAnalyzer:
             print(f"  Error generating plots: {e}")
             import traceback
             traceback.print_exc()
+def find_data_folder():
+    """
+    Find the appropriate data folder in the sensordata project
+    """
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Check potential data folders
+    potential_folders = [
+        os.path.join(script_dir, "foodratingexperimentresults"),
+        os.path.join(script_dir, "ITUG-ISWAY"),
+        os.path.join(script_dir, "18-04-2025SENSORDATA"),
+    ]
+
+    for folder in potential_folders:
+        if os.path.exists(folder) and os.path.isdir(folder):
+            print(f"Found data folder: {folder}")
+            return folder
+
+    print("No specific data folder found. Using current directory.")
+    return script_dir
+
+# Main function
+def main():
+    """
+    Main function to run the analysis
+    """
+    print("Starting sensor data analysis...")
+
+    # Find data folder
+    data_folder = find_data_folder()
+
+    # Create analyzer
+    analyzer = ParticipantDataAnalyzer(root_folder=data_folder)
+
+    # Run analysis
+    analyzer.analyze_all_participants()
+
+    print("Analysis complete!")
+
+
+# Run the script
+if __name__ == "_main_":
+    main()
