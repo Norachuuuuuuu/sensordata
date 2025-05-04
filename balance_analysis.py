@@ -17,46 +17,15 @@ from itertools import combinations
 def load_data(file_path):
     """
     Reads JSON format data and converts it to a DataFrame
-    Can handle both individual files and directories containing multiple JSON files
     """
-    # Check if path is a directory
-    if os.path.isdir(file_path):
-        print(f"Loading data from directory: {file_path}")
-        all_data = []
+    with open(file_path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
 
-        # Process each JSON file in the directory
-        for filename in os.listdir(file_path):
-            if filename.endswith('.json'):
-                file_full_path = os.path.join(file_path, filename)
-                try:
-                    with open(file_full_path, 'r', encoding='utf-8') as f:
-                        file_data = json.load(f)
+    # If it's data for a single person, handle accordingly
+    if isinstance(data, dict):
+        data = [data]
 
-                    # If it's data for a single person, make it a list
-                    if isinstance(file_data, dict):
-                        file_data = [file_data]
-
-                    # Add to our overall data collection
-                    all_data.extend(file_data)
-                except Exception as e:
-                    print(f"Error loading {filename}: {e}")
-
-        # No data found
-        if not all_data:
-            raise ValueError(f"No valid JSON files found in directory: {file_path}")
-
-        data = all_data
-    else:
-        # Handle single file case
-        print(f"Loading data from file: {file_path}")
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-
-        # If it's data for a single person, make it a list
-        if isinstance(data, dict):
-            data = [data]
-
-    # Convert to DataFrame - this part remains the same as your original function
+    # Convert to DataFrame
     df_list = []
     for person in data:
         person_df = {}
@@ -107,6 +76,35 @@ def load_data(file_path):
     # Combine all person data into a single DataFrame
     df = pd.DataFrame(df_list)
     return df
+
+
+# Function to calculate balance change scores
+def calculate_balance_changes(df):
+    """
+    Calculate changes in balance parameters between pre and post tests
+    """
+    balance_changes = pd.DataFrame()
+    balance_changes['name'] = df['name']
+
+    # Calculate ITUG changes
+    itug_params = ['PC1_std', 'PC1_range', 'PC1_dominant_freq', 'PC1_spectral_entropy', 'stride_frequency']
+    for param in itug_params:
+        balance_changes[f'itug_{param}_change'] = df[f'post_itug_{param}'] - df[f'pre_itug_{param}']
+
+    # Calculate ISWAY changes
+    isway_params = ['PC1_std', 'PC1_range', 'PC1_dominant_freq', 'PC1_spectral_entropy', 'sway_area', 'mean_distance',
+                    'path_length']
+    for param in isway_params:
+        balance_changes[f'isway_{param}_change'] = df[f'post_isway_{param}'] - df[f'pre_isway_{param}']
+
+    # Add cognitive dissonance measures for analysis
+    balance_changes['average_rating_change'] = df['average_rating_change']
+    balance_changes['average_rejected_rating_difference'] = df['average_rejected_rating_difference']
+    balance_changes['chosen_pair_rating_diff'] = df['chosen_pair_rating_diff']
+    balance_changes['computer_pair_rating_diff'] = df['computer_pair_rating_diff']
+
+    return balance_changes
+
 
 # Function for correlation analysis
 def correlation_analysis(df, balance_changes):
@@ -682,386 +680,3 @@ def mixed_effects_model(df):
 # Function to run comprehensive analysis
 def run_analysis(file_path):
     """
-    Run a comprehensive statistical analysis for the relationship between
-    cognitive dissonance and balance parameters
-
-    Parameters:
-    -----------
-    file_path : str
-        Path to the JSON file containing participant data
-
-    Returns:
-    --------
-    dict
-        Dictionary containing all analysis results
-    """
-    print("\n=== STARTING COMPREHENSIVE ANALYSIS ===\n")
-
-    # Load data
-    print("Loading data...")
-    df = load_data(file_path)
-    print(f"Loaded data for {len(df)} participants")
-
-    # Calculate balance changes
-    print("\nCalculating balance changes...")
-    balance_changes = calculate_balance_changes(df)
-
-    # Run all analyses
-    print("\nRunning correlation analysis...")
-    corr_results = correlation_analysis(df, balance_changes)
-
-    print("\nRunning linear regression analysis...")
-    reg_results = linear_regression_analysis(df)
-
-    print("\nRunning repeated measures ANOVA...")
-    anova_results = repeated_measures_anova(df)
-
-    print("\nRunning paired t-tests...")
-    t_test_results = paired_t_tests(df)
-
-    print("\nRunning change score analysis...")
-    change_score_results = change_score_analysis(balance_changes)
-
-    print("\nRunning mixed effects models...")
-    mixed_model_results = mixed_effects_model(df)
-
-    # Create output directory for results
-    os.makedirs("analysis_results", exist_ok=True)
-
-    # Save results to CSV files
-    corr_results.to_csv("analysis_results/correlation_results.csv", index=False)
-    reg_results.to_csv("analysis_results/regression_results.csv", index=False)
-    anova_results.to_csv("analysis_results/anova_results.csv", index=False)
-    t_test_results.to_csv("analysis_results/t_test_results.csv", index=False)
-    change_score_results.to_csv("analysis_results/change_score_results.csv", index=False)
-    mixed_model_results.to_csv("analysis_results/mixed_model_results.csv", index=False)
-
-    # Create a summary of significant findings
-    print("\n=== SUMMARY OF SIGNIFICANT FINDINGS ===\n")
-
-    # Significant correlations
-    sig_correlations = corr_results[(corr_results['p_value_rating_change'] < 0.05) |
-                                    (corr_results['p_value_rejected_diff'] < 0.05)]
-    if len(sig_correlations) > 0:
-        print("\nSignificant correlations between initial balance and cognitive dissonance:")
-        print(sig_correlations)
-    else:
-        print("\nNo significant correlations found between initial balance and cognitive dissonance.")
-
-    # Significant regression models
-    sig_regression = reg_results[reg_results['p_value'] < 0.05]
-    if len(sig_regression) > 0:
-        print("\nSignificant regression models predicting cognitive dissonance from balance parameters:")
-        print(sig_regression)
-    else:
-        print("\nNo significant regression models found.")
-
-    # Significant ANOVA results
-    sig_anova = anova_results[anova_results['p_value'] < 0.05]
-    if len(sig_anova) > 0:
-        print("\nSignificant changes in balance parameters (ANOVA):")
-        print(sig_anova)
-    else:
-        print("\nNo significant changes in balance parameters found (ANOVA).")
-
-    # Significant t-test results
-    sig_t_tests = t_test_results[t_test_results['p_value'] < 0.05]
-    if len(sig_t_tests) > 0:
-        print("\nSignificant changes in balance parameters (paired t-tests):")
-        print(sig_t_tests)
-    else:
-        print("\nNo significant changes in balance parameters found (paired t-tests).")
-
-    # Significant change score correlations
-    sig_change_corrs = change_score_results[change_score_results['p_value'] < 0.05]
-    if len(sig_change_corrs) > 0:
-        print("\nSignificant correlations between cognitive dissonance and balance changes:")
-        print(sig_change_corrs)
-    else:
-        print("\nNo significant correlations found between cognitive dissonance and balance changes.")
-
-    # Significant mixed effects models
-    sig_mixed_models = mixed_model_results[mixed_model_results['p_value'] < 0.05]
-    if len(sig_mixed_models) > 0:
-        print("\nSignificant relationships in mixed effects models:")
-        print(sig_mixed_models)
-    else:
-        print("\nNo significant relationships found in mixed effects models.")
-
-    # Save summary of significant findings
-    with open("analysis_results/significant_findings_summary.txt", "w") as f:
-        f.write("=== SUMMARY OF SIGNIFICANT FINDINGS ===\n\n")
-
-        f.write("1. CORRELATIONS BETWEEN INITIAL BALANCE AND COGNITIVE DISSONANCE:\n")
-        if len(sig_correlations) > 0:
-            for _, row in sig_correlations.iterrows():
-                f.write(f"   - {row['test_type']} {row['parameter']}:\n")
-                if row['p_value_rating_change'] < 0.05:
-                    f.write(
-                        f"     * Correlation with rating change: r = {row['correlation_with_rating_change']:.3f}, p = {row['p_value_rating_change']:.3f}\n")
-                if row['p_value_rejected_diff'] < 0.05:
-                    f.write(
-                        f"     * Correlation with rejected difference: r = {row['correlation_with_rejected_diff']:.3f}, p = {row['p_value_rejected_diff']:.3f}\n")
-        else:
-            f.write("   No significant correlations found.\n")
-
-        f.write("\n2. REGRESSION MODELS PREDICTING COGNITIVE DISSONANCE FROM BALANCE:\n")
-        if len(sig_regression) > 0:
-            for _, row in sig_regression.iterrows():
-                f.write(f"   - {row['test_type']} predicting {row['dependent_variable']}:\n")
-                f.write(
-                    f"     * R² = {row['r_squared']:.3f}, Adj. R² = {row['adj_r_squared']:.3f}, p = {row['p_value']:.3f}\n")
-                f.write(f"     * Significant predictors: {', '.join(row['significant_predictors'])}\n")
-        else:
-            f.write("   No significant regression models found.\n")
-
-        f.write("\n3. CHANGES IN BALANCE PARAMETERS AFTER COGNITIVE DISSONANCE (ANOVA):\n")
-        if len(sig_anova) > 0:
-            for _, row in sig_anova.iterrows():
-                f.write(f"   - {row['test_type']} {row['parameter']}:\n")
-                f.write(f"     * F = {row['F_value']:.3f}, p = {row['p_value']:.3f}\n")
-        else:
-            f.write("   No significant changes found.\n")
-
-        f.write("\n4. CHANGES IN BALANCE PARAMETERS AFTER COGNITIVE DISSONANCE (PAIRED T-TESTS):\n")
-        if len(sig_t_tests) > 0:
-            for _, row in sig_t_tests.iterrows():
-                direction = "increased" if row['mean_difference'] > 0 else "decreased"
-                f.write(f"   - {row['test_type']} {row['parameter']} {direction}:\n")
-                f.write(
-                    f"     * t = {row['t_statistic']:.3f}, p = {row['p_value']:.3f}, Cohen's d = {row['effect_size_d']:.3f}\n")
-                f.write(f"     * Mean difference: {row['mean_difference']:.3f}\n")
-        else:
-            f.write("   No significant changes found.\n")
-
-        f.write("\n5. CORRELATIONS BETWEEN COGNITIVE DISSONANCE AND CHANGES IN BALANCE:\n")
-        if len(sig_change_corrs) > 0:
-            for _, row in sig_change_corrs.iterrows():
-                f.write(f"   - {row['cognitive_dissonance_measure']} with {row['balance_parameter']}:\n")
-                f.write(f"     * r = {row['correlation']:.3f}, p = {row['p_value']:.3f}\n")
-        else:
-            f.write("   No significant correlations found.\n")
-
-        f.write("\n6. MIXED EFFECTS MODELS:\n")
-        if len(sig_mixed_models) > 0:
-            pre_on_cd = sig_mixed_models[sig_mixed_models['model_type'] == 'pre_balance_on_cd']
-            cd_on_post = sig_mixed_models[sig_mixed_models['model_type'] == 'cd_on_post_balance']
-
-            if len(pre_on_cd) > 0:
-                f.write("   A. Effect of initial balance on cognitive dissonance:\n")
-                for _, row in pre_on_cd.iterrows():
-                    f.write(f"     - {row['test_type']} {row['parameter']}:\n")
-                    f.write(
-                        f"       * Coefficient = {row['coefficient']:.3f}, p = {row['p_value']:.3f}, R² = {row['r_squared']:.3f}\n")
-            else:
-                f.write("   A. No significant effects of initial balance on cognitive dissonance found.\n")
-
-            if len(cd_on_post) > 0:
-                f.write("\n   B. Effect of cognitive dissonance on balance (controlling for initial balance):\n")
-                for _, row in cd_on_post.iterrows():
-                    f.write(f"     - {row['test_type']} {row['parameter']}:\n")
-                    f.write(
-                        f"       * Coefficient = {row['coefficient']:.3f}, p = {row['p_value']:.3f}, R² = {row['r_squared']:.3f}\n")
-            else:
-                f.write("\n   B. No significant effects of cognitive dissonance on balance found.\n")
-        else:
-            f.write("   No significant relationships found in mixed effects models.\n")
-
-    print("\nAnalysis complete! Results saved to 'analysis_results' directory.")
-
-    return {
-        'correlations': corr_results,
-        'regressions': reg_results,
-        'anova': anova_results,
-        't_tests': t_test_results,
-        'change_scores': change_score_results,
-        'mixed_models': mixed_model_results
-    }
-
-
-# Main function to run the script
-def main():
-    """
-    Main function to run the analysis
-    """
-    # Check if file path is provided as an argument
-    import sys
-    if len(sys.argv) > 1:
-        file_path = sys.argv[1]
-    else:
-        # Default file path if not provided
-        file_path = "participant_data.json"
-
-    # Run the analysis
-    try:
-        results = run_analysis(file_path)
-        print("\nAnalysis completed successfully!")
-
-        # Generate some basic visualizations
-        create_visualizations(results)
-
-    except FileNotFoundError:
-        print(f"Error: Could not find file '{file_path}'")
-        print("Please provide the correct path to your JSON file.")
-    except Exception as e:
-        print(f"Error during analysis: {str(e)}")
-        import traceback
-        traceback.print_exc()
-
-
-# Function to create visualizations
-def create_visualizations(results):
-    """
-    Create visualizations for the analysis results
-
-    Parameters:
-    -----------
-    results : dict
-        Dictionary containing analysis results
-    """
-    print("\nGenerating visualizations...")
-
-    # Create output directory for visualizations
-    os.makedirs("analysis_visualizations", exist_ok=True)
-
-    # 1. Correlation heatmap for initial balance and cognitive dissonance
-    try:
-        corr_df = results['correlations']
-
-        # Reshape data for heatmap
-        heatmap_data = pd.pivot_table(
-            corr_df,
-            values='correlation_with_rating_change',
-            index='parameter',
-            columns='test_type'
-        )
-
-        plt.figure(figsize=(10, 8))
-        sns.heatmap(heatmap_data, annot=True, cmap='coolwarm', center=0, fmt='.2f')
-        plt.title('Correlation between Initial Balance Parameters and Rating Change')
-        plt.tight_layout()
-        plt.savefig("analysis_visualizations/correlation_heatmap_rating_change.png")
-
-        # Another heatmap for rejected rating difference
-        heatmap_data = pd.pivot_table(
-            corr_df,
-            values='correlation_with_rejected_diff',
-            index='parameter',
-            columns='test_type'
-        )
-
-        plt.figure(figsize=(10, 8))
-        sns.heatmap(heatmap_data, annot=True, cmap='coolwarm', center=0, fmt='.2f')
-        plt.title('Correlation between Initial Balance Parameters and Rejected Rating Difference')
-        plt.tight_layout()
-        plt.savefig("analysis_visualizations/correlation_heatmap_rejected_diff.png")
-    except Exception as e:
-        print(f"Error creating correlation heatmaps: {e}")
-
-    # 2. Bar plots for t-test results
-    try:
-        t_test_df = results['t_tests']
-
-        # ITUG t-tests
-        itug_t_tests = t_test_df[t_test_df['test_type'] == 'ITUG']
-
-        plt.figure(figsize=(12, 6))
-        bar_colors = ['green' if p < 0.05 else 'gray' for p in itug_t_tests['p_value']]
-
-        sns.barplot(x='parameter', y='mean_difference', data=itug_t_tests, palette=bar_colors)
-        plt.axhline(y=0, color='black', linestyle='-', alpha=0.3)
-        plt.title('Mean Differences in ITUG Parameters (Pre vs Post)')
-        plt.xlabel('Parameter')
-        plt.ylabel('Mean Difference (Post - Pre)')
-        plt.xticks(rotation=45)
-
-        # Add p-values above bars
-        for i, p in enumerate(itug_t_tests['p_value']):
-            plt.text(i, itug_t_tests['mean_difference'].iloc[i] + 0.02, f'p={p:.3f}',
-                     ha='center', va='bottom', fontsize=9)
-
-        plt.tight_layout()
-        plt.savefig("analysis_visualizations/itug_t_test_differences.png")
-
-        # ISWAY t-tests
-        isway_t_tests = t_test_df[t_test_df['test_type'] == 'ISWAY']
-
-        plt.figure(figsize=(12, 6))
-        bar_colors = ['green' if p < 0.05 else 'gray' for p in isway_t_tests['p_value']]
-
-        sns.barplot(x='parameter', y='mean_difference', data=isway_t_tests, palette=bar_colors)
-        plt.axhline(y=0, color='black', linestyle='-', alpha=0.3)
-        plt.title('Mean Differences in ISWAY Parameters (Pre vs Post)')
-        plt.xlabel('Parameter')
-        plt.ylabel('Mean Difference (Post - Pre)')
-        plt.xticks(rotation=45)
-
-        # Add p-values above bars
-        for i, p in enumerate(isway_t_tests['p_value']):
-            plt.text(i, isway_t_tests['mean_difference'].iloc[i] + 0.02, f'p={p:.3f}',
-                     ha='center', va='bottom', fontsize=9)
-
-        plt.tight_layout()
-        plt.savefig("analysis_visualizations/isway_t_test_differences.png")
-    except Exception as e:
-        print(f"Error creating t-test visualizations: {e}")
-
-    # 3. Scatter plots for significant correlations between cognitive dissonance and balance changes
-    try:
-        change_scores = results['change_scores']
-        significant_changes = change_scores[change_scores['p_value'] < 0.05]
-
-        for _, row in significant_changes.iterrows():
-            # We'll need the original data to create these plots
-            # Since we don't have access to the balance_changes dataframe here,
-            # we'll just note that these plots should be created in the change_score_analysis function
-            pass
-    except Exception as e:
-        print(f"Error creating change score visualizations: {e}")
-
-    # 4. Forest plot for mixed effects model results
-    try:
-        mixed_models = results['mixed_models']
-
-        # Filter for cognitive dissonance effects on balance
-        cd_effects = mixed_models[mixed_models['model_type'] == 'cd_on_post_balance']
-
-        if len(cd_effects) > 0:
-            # Sort by test type and parameter
-            cd_effects = cd_effects.sort_values(['test_type', 'parameter'])
-
-            plt.figure(figsize=(12, 8))
-
-            # Create labels for y-axis
-            labels = [f"{row['test_type']} - {row['parameter']}" for _, row in cd_effects.iterrows()]
-
-            # Plot coefficients
-            plt.errorbar(
-                x=cd_effects['coefficient'],
-                y=range(len(cd_effects)),
-                xerr=None,  # Would need standard errors for this
-                fmt='o',
-                markersize=8,
-                color=[('green' if p < 0.05 else 'gray') for p in cd_effects['p_value']]
-            )
-
-            # Add vertical line at zero
-            plt.axvline(x=0, color='black', linestyle='--', alpha=0.7)
-
-            # Labels and title
-            plt.yticks(range(len(cd_effects)), labels)
-            plt.xlabel('Effect Size (Coefficient)')
-            plt.title('Effect of Cognitive Dissonance on Balance Parameters')
-
-            plt.grid(axis='x', alpha=0.3)
-            plt.tight_layout()
-            plt.savefig("analysis_visualizations/mixed_model_coefficients.png")
-    except Exception as e:
-        print(f"Error creating mixed model visualizations: {e}")
-
-    print("Visualizations saved to 'analysis_visualizations' directory.")
-
-
-# Run the main function if script is executed directly
-if __name__ == "__main__":
-    main()
