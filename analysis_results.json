@@ -1,0 +1,541 @@
+{
+  "sample_size": 49,
+  "correlations": {
+    "pre_itug_pc1_std_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.010158533682622421,
+      "pearson_p": 0.9447701230130424,
+      "spearman_r": 0.04704081632653061,
+      "spearman_p": 0.7482385346272267,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_std_vs_chosen_pair_rating_diff": {
+      "pearson_r": -0.06047842983411017,
+      "pearson_p": 0.6797543441587007,
+      "spearman_r": -0.07846938775510202,
+      "spearman_p": 0.5920046433255273,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_std_vs_rejected_pair_rating_diff": {
+      "pearson_r": -0.10863968935238613,
+      "pearson_p": 0.45745181537353896,
+      "spearman_r": -0.12072044507779785,
+      "spearman_p": 0.40865881606593113,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_std_vs_rating_change": {
+      "pearson_r": -0.11255030876679259,
+      "pearson_p": 0.44132076828959416,
+      "spearman_r": -0.22552746449706898,
+      "spearman_p": 0.1192126339425784,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_range_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.011382947698835931,
+      "pearson_p": 0.9381254669777713,
+      "spearman_r": 0.049081632653061216,
+      "spearman_p": 0.737697516937967,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_range_vs_chosen_pair_rating_diff": {
+      "pearson_r": -0.06062893802705196,
+      "pearson_p": 0.6790003929066377,
+      "spearman_r": -0.08244897959183672,
+      "spearman_p": 0.5732959158316797,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_range_vs_rejected_pair_rating_diff": {
+      "pearson_r": -0.10970743769516092,
+      "pearson_p": 0.45301592103892485,
+      "spearman_r": -0.12577172321080798,
+      "spearman_p": 0.3891824744743506,
+      "n_samples": "49"
+    },
+    "pre_itug_pc1_range_vs_rating_change": {
+      "pearson_r": -0.11244155998477814,
+      "pearson_p": 0.44176504251567367,
+      "spearman_r": -0.231752430711694,
+      "spearman_p": 0.10909214017669058,
+      "n_samples": "49"
+    },
+    "pre_itug_spectral_entropy_vs_cognitive_dissonance_score": {
+      "pearson_r": -0.05833866676612868,
+      "pearson_p": 0.690506433433897,
+      "spearman_r": -0.14561224489795918,
+      "spearman_p": 0.3181308989481365,
+      "n_samples": "49"
+    },
+    "pre_itug_spectral_entropy_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.05543927565278626,
+      "pearson_p": 0.7051721824050939,
+      "spearman_r": 0.031224489795918367,
+      "spearman_p": 0.8313419340641999,
+      "n_samples": "49"
+    },
+    "pre_itug_spectral_entropy_vs_rejected_pair_rating_diff": {
+      "pearson_r": 0.17908978535965106,
+      "pearson_p": 0.21822970418389925,
+      "spearman_r": 0.18679524489848603,
+      "spearman_p": 0.19873719319190433,
+      "n_samples": "49"
+    },
+    "pre_itug_spectral_entropy_vs_rating_change": {
+      "pearson_r": 0.13299073101442843,
+      "pearson_p": 0.36231738118216356,
+      "spearman_r": 0.011021251658680295,
+      "spearman_p": 0.9400879072445882,
+      "n_samples": "49"
+    },
+    "pre_itug_stride_frequency_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.030491762014547733,
+      "pearson_p": 0.8352441573587378,
+      "spearman_r": 0.06499410011244776,
+      "spearman_p": 0.6572714589349282,
+      "n_samples": "49"
+    },
+    "pre_itug_stride_frequency_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.09758378499811039,
+      "pearson_p": 0.5047419753897814,
+      "spearman_r": 0.1129929125568228,
+      "spearman_p": 0.4395151449745466,
+      "n_samples": "49"
+    },
+    "pre_itug_stride_frequency_vs_rejected_pair_rating_diff": {
+      "pearson_r": 0.03880605329813808,
+      "pearson_p": 0.7912178218971757,
+      "spearman_r": -0.07148685733103541,
+      "spearman_p": 0.625468298809277,
+      "n_samples": "49"
+    },
+    "pre_itug_stride_frequency_vs_rating_change": {
+      "pearson_r": 0.21174034257704916,
+      "pearson_p": 0.144142322536028,
+      "spearman_r": 0.13303693344405182,
+      "spearman_p": 0.36214914865701686,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_std_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.07788150237060451,
+      "pearson_p": 0.5947912135884227,
+      "spearman_r": -0.01724489795918367,
+      "spearman_p": 0.9063793085688048,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_std_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.024345207273218643,
+      "pearson_p": 0.8681241900372353,
+      "spearman_r": 0.07020408163265306,
+      "spearman_p": 0.6317007758446516,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_std_vs_rejected_pair_rating_diff": {
+      "pearson_r": -0.040235425615308955,
+      "pearson_p": 0.7837093981352605,
+      "spearman_r": -0.012551660815358526,
+      "spearman_p": 0.9317869691880284,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_std_vs_rating_change": {
+      "pearson_r": -0.22315538745272637,
+      "pearson_p": 0.12325103769571077,
+      "spearman_r": -0.23797739692631895,
+      "spearman_p": 0.09964257514496316,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_range_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.06356677311082304,
+      "pearson_p": 0.6643467033067165,
+      "spearman_r": -0.01724489795918367,
+      "spearman_p": 0.9063793085688048,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_range_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.030168929986039907,
+      "pearson_p": 0.8369646874519033,
+      "spearman_r": 0.06714285714285713,
+      "spearman_p": 0.6466760824202926,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_range_vs_rejected_pair_rating_diff": {
+      "pearson_r": -0.027786266171724208,
+      "pearson_p": 0.8496859057292503,
+      "spearman_r": -0.01265370683824762,
+      "spearman_p": 0.9312337171339984,
+      "n_samples": "49"
+    },
+    "pre_isway_pc1_range_vs_rating_change": {
+      "pearson_r": -0.2146970206801642,
+      "pearson_p": 0.13849508132843133,
+      "spearman_r": -0.23899788319101156,
+      "spearman_p": 0.09815567454896573,
+      "n_samples": "49"
+    },
+    "pre_isway_spectral_entropy_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.03602633917674906,
+      "pearson_p": 0.8058727507810217,
+      "spearman_r": -0.1030612244897959,
+      "spearman_p": 0.48100655261862657,
+      "n_samples": "49"
+    },
+    "pre_isway_spectral_entropy_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.020351433344065827,
+      "pearson_p": 0.8896108156829019,
+      "spearman_r": 0.02214285714285714,
+      "spearman_p": 0.8799622545452193,
+      "n_samples": "49"
+    },
+    "pre_isway_spectral_entropy_vs_rejected_pair_rating_diff": {
+      "pearson_r": -0.00951774323988071,
+      "pearson_p": 0.948249079116498,
+      "spearman_r": 0.11469972972734131,
+      "spearman_p": 0.4325906638637943,
+      "n_samples": "49"
+    },
+    "pre_isway_spectral_entropy_vs_rating_change": {
+      "pearson_r": -0.10462488138535947,
+      "pearson_p": 0.4743403872137809,
+      "spearman_r": -0.10730413073242898,
+      "spearman_p": 0.4630333693735518,
+      "n_samples": "49"
+    },
+    "pre_isway_sway_area_vs_cognitive_dissonance_score": {
+      "pearson_r": -0.10173624639750743,
+      "pearson_p": 0.4866935842904684,
+      "spearman_r": -0.09204081632653059,
+      "spearman_p": 0.5293551782292496,
+      "n_samples": "49"
+    },
+    "pre_isway_sway_area_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.011573913470760002,
+      "pearson_p": 0.9370894972820283,
+      "spearman_r": 0.011122448979591835,
+      "spearman_p": 0.9395388088703858,
+      "n_samples": "49"
+    },
+    "pre_isway_sway_area_vs_rejected_pair_rating_diff": {
+      "pearson_r": 0.07730691061049107,
+      "pearson_p": 0.5975203601123844,
+      "spearman_r": 0.13230266867570997,
+      "spearman_p": 0.3648283598114016,
+      "n_samples": "49"
+    },
+    "pre_isway_sway_area_vs_rating_change": {
+      "pearson_r": -0.007503986392706894,
+      "pearson_p": 0.9591880129150062,
+      "spearman_r": 0.03811516198626936,
+      "spearman_p": 0.7948538178003057,
+      "n_samples": "49"
+    },
+    "pre_isway_mean_distance_vs_cognitive_dissonance_score": {
+      "pearson_r": 0.07901886282999783,
+      "pearson_p": 0.5894053938398722,
+      "spearman_r": -0.01693877551020408,
+      "spearman_p": 0.9080340082398036,
+      "n_samples": "49"
+    },
+    "pre_isway_mean_distance_vs_chosen_pair_rating_diff": {
+      "pearson_r": 0.023707618681790495,
+      "pearson_p": 0.8715485295834812,
+      "spearman_r": 0.06999999999999999,
+      "spearman_p": 0.6326946786944219,
+      "n_samples": "49"
+    },
+    "pre_isway_mean_distance_vs_rejected_pair_rating_diff": {
+      "pearson_r": -0.04120577665444621,
+      "pearson_p": 0.7786232288576754,
+      "spearman_r": -0.013163936952693089,
+      "spearman_p": 0.9284679442909691,
+      "n_samples": "49"
+    },
+    "pre_isway_mean_distance_vs_rating_change": {
+      "pearson_r": -0.22349021389555923,
+      "pearson_p": 0.12267482138529376,
+      "spearman_r": -0.23767125104691114,
+      "spearman_p": 0.10009201835230236,
+      "n_samples": "49"
+    },
+    "pre_isway_path_length_vs_cognitive_dissonance_score": {
+      "pearson_r": -0.016219533195352267,
+      "pearson_p": 0.9119232740103087,
+      "spearman_r": -0.0026530612244897956,
+      "spearman_p": 0.9855654438678403,
+      "n_samples": "49"
+    },
+    "pre_isway_path_length_vs_chosen_pair_rating_diff": {
+      "pearson_r": -0.02395374419592898,
+      "pearson_p": 0.8702263672526026,
+      "spearman_r": -0.09897959183673467,
+      "spearman_p": 0.4986373685871658,
+      "n_samples": "49"
+    },
+    "pre_isway_path_length_vs_rejected_pair_rating_diff": {
+      "pearson_r": 0.048753939572572576,
+      "pearson_p": 0.7393869276672368,
+      "spearman_r": 0.08597377428406144,
+      "spearman_p": 0.5569555059800939,
+      "n_samples": "49"
+    },
+    "pre_isway_path_length_vs_rating_change": {
+      "pearson_r": -0.12882953472027406,
+      "pearson_p": 0.3776628899066447,
+      "spearman_r": -0.07020945501085224,
+      "spearman_p": 0.6316746155184317,
+      "n_samples": "49"
+    }
+  },
+  "regression_results": {
+    "cognitive_dissonance_score": {
+      "r2": 0.11855521835129446,
+      "coefficients": {
+        "pre_itug_pc1_std": -2.7407595535478904,
+        "pre_itug_pc1_range": 2.723346534943188,
+        "pre_itug_spectral_entropy": 0.0007557374163111911,
+        "pre_isway_pc1_std": -393.1792429642885,
+        "pre_isway_pc1_range": 26.056507057111183,
+        "pre_isway_spectral_entropy": -0.13487658583897827,
+        "pre_isway_sway_area": -0.09369836820997948,
+        "pre_isway_mean_distance": 367.5565660484218
+      },
+      "intercept": 0.967306695152168,
+      "n_samples": 49,
+      "predictors": [
+        "pre_itug_pc1_std",
+        "pre_itug_pc1_range",
+        "pre_itug_spectral_entropy",
+        "pre_isway_pc1_std",
+        "pre_isway_pc1_range",
+        "pre_isway_spectral_entropy",
+        "pre_isway_sway_area",
+        "pre_isway_mean_distance"
+      ]
+    },
+    "rating_change": {
+      "r2": 0.12786758856497005,
+      "coefficients": {
+        "pre_itug_pc1_std": -2.224218429835471,
+        "pre_itug_pc1_range": 2.16021839020689,
+        "pre_itug_spectral_entropy": 0.07840964449443738,
+        "pre_isway_pc1_std": -133.42805216533515,
+        "pre_isway_pc1_range": 8.94454857705852,
+        "pre_isway_spectral_entropy": -0.051619622563661385,
+        "pre_isway_sway_area": 0.017747623377179347,
+        "pre_isway_mean_distance": 124.51245159338755
+      },
+      "intercept": -0.19952087881938702,
+      "n_samples": 49,
+      "predictors": [
+        "pre_itug_pc1_std",
+        "pre_itug_pc1_range",
+        "pre_itug_spectral_entropy",
+        "pre_isway_pc1_std",
+        "pre_isway_pc1_range",
+        "pre_isway_spectral_entropy",
+        "pre_isway_sway_area",
+        "pre_isway_mean_distance"
+      ]
+    }
+  },
+  "paired_t_tests": {
+    "pre_itug_pc1_std_vs_post_itug_pc1_std": {
+      "t_statistic": 2.546952695440772,
+      "p_value": 0.014127598084201188,
+      "effect_size": -0.36385038506296746,
+      "mean_difference": -0.7220356105335186,
+      "std_difference": 1.9844299749980039,
+      "n_samples": 49,
+      "pre_mean": 8.852825618240493,
+      "post_mean": 8.130790007706976
+    },
+    "pre_itug_pc1_range_vs_post_itug_pc1_range": {
+      "t_statistic": 2.565359967952143,
+      "p_value": 0.013486729972728052,
+      "effect_size": -0.36647999542173465,
+      "mean_difference": -2.5136617432665362,
+      "std_difference": 6.858933024090132,
+      "n_samples": 49,
+      "pre_mean": 30.51249311939702,
+      "post_mean": 27.998831376130497
+    },
+    "pre_itug_spectral_entropy_vs_post_itug_spectral_entropy": {
+      "t_statistic": -1.3351840096268246,
+      "p_value": 0.1881140188051712,
+      "effect_size": 0.19074057280383208,
+      "mean_difference": 0.0023309407050305865,
+      "std_difference": 0.012220476591668056,
+      "n_samples": 49,
+      "pre_mean": 0.08793280392236268,
+      "post_mean": 0.09026374462739324
+    },
+    "pre_itug_stride_frequency_vs_post_itug_stride_frequency": {
+      "t_statistic": -0.8681632579533342,
+      "p_value": 0.389624937069571,
+      "effect_size": 0.12402332256476202,
+      "mean_difference": 0.027385658532213773,
+      "std_difference": 0.22081055374011316,
+      "n_samples": 49,
+      "pre_mean": 0.10819310757818297,
+      "post_mean": 0.13557876611039674
+    },
+    "pre_isway_pc1_std_vs_post_isway_pc1_std": {
+      "t_statistic": 0.4520971968747947,
+      "p_value": 0.6532354705010293,
+      "effect_size": -0.06458531383925638,
+      "mean_difference": -0.8078055359836255,
+      "std_difference": 12.50757313023419,
+      "n_samples": 49,
+      "pre_mean": 48.94611430155255,
+      "post_mean": 48.138308765568915
+    },
+    "pre_isway_pc1_range_vs_post_isway_pc1_range": {
+      "t_statistic": 0.7282409200066879,
+      "p_value": 0.4700040697238683,
+      "effect_size": -0.10403441714381258,
+      "mean_difference": -4.34402262259323,
+      "std_difference": 41.755629933392576,
+      "n_samples": 49,
+      "pre_mean": 171.09720878585455,
+      "post_mean": 166.7531861632613
+    },
+    "pre_isway_spectral_entropy_vs_post_isway_spectral_entropy": {
+      "t_statistic": -1.0292000053018517,
+      "p_value": 0.3085441281870634,
+      "effect_size": 0.1470285721859788,
+      "mean_difference": 0.024422981060872866,
+      "std_difference": 0.16611044164925878,
+      "n_samples": 49,
+      "pre_mean": 0.0596722070731287,
+      "post_mean": 0.08409518813400157
+    },
+    "pre_isway_sway_area_vs_post_isway_sway_area": {
+      "t_statistic": 1.0279599512041024,
+      "p_value": 0.3091210848727452,
+      "effect_size": -0.14685142160058604,
+      "mean_difference": -67.00413057967742,
+      "std_difference": 456.27158286501754,
+      "n_samples": 49,
+      "pre_mean": 843.0592493414732,
+      "post_mean": 776.0551187617957
+    },
+    "pre_isway_mean_distance_vs_post_isway_mean_distance": {
+      "t_statistic": 0.42875227888222467,
+      "p_value": 0.6700216119898156,
+      "effect_size": -0.061250325554603524,
+      "mean_difference": -0.6659245071978772,
+      "std_difference": 10.872179064651958,
+      "n_samples": 49,
+      "pre_mean": 42.35502818928375,
+      "post_mean": 41.68910368208588
+    },
+    "pre_isway_path_length_vs_post_isway_path_length": {
+      "t_statistic": 0.21698821525847609,
+      "p_value": 0.8291371992278505,
+      "effect_size": -0.030998316465496577,
+      "mean_difference": -2.0016414794931188,
+      "std_difference": 64.57258676357776,
+      "n_samples": 49,
+      "pre_mean": 212.75826972612185,
+      "post_mean": 210.7566282466288
+    }
+  },
+  "change_correlations": {
+    "itug_std_change_vs_cognitive_dissonance_score": {
+      "correlation": 0.0020162244860645346,
+      "p_value": 0.9890300478955343,
+      "n_samples": 49
+    },
+    "itug_std_change_vs_rating_change": {
+      "correlation": 0.029251090931992678,
+      "p_value": 0.8418603997299134,
+      "n_samples": 49
+    },
+    "itug_range_change_vs_cognitive_dissonance_score": {
+      "correlation": -0.00035694989226540724,
+      "p_value": 0.9980578358745316,
+      "n_samples": 49
+    },
+    "itug_range_change_vs_rating_change": {
+      "correlation": 0.03297239437063975,
+      "p_value": 0.8220496723522351,
+      "n_samples": 49
+    },
+    "itug_entropy_change_vs_cognitive_dissonance_score": {
+      "correlation": 0.009962000531844829,
+      "p_value": 0.9458370282496475,
+      "n_samples": 49
+    },
+    "itug_entropy_change_vs_rating_change": {
+      "correlation": -0.12046103005479067,
+      "p_value": 0.4096739670248347,
+      "n_samples": 49
+    },
+    "itug_frequency_change_vs_cognitive_dissonance_score": {
+      "correlation": -0.033045342759269215,
+      "p_value": 0.8216623772890741,
+      "n_samples": 49
+    },
+    "itug_frequency_change_vs_rating_change": {
+      "correlation": -0.126343484083818,
+      "p_value": 0.38701292134613097,
+      "n_samples": 49
+    },
+    "isway_std_change_vs_cognitive_dissonance_score": {
+      "correlation": -0.004014005611681503,
+      "p_value": 0.9781624162143773,
+      "n_samples": 49
+    },
+    "isway_std_change_vs_rating_change": {
+      "correlation": 0.2003328855979514,
+      "p_value": 0.1675355396332507,
+      "n_samples": 49
+    },
+    "isway_range_change_vs_cognitive_dissonance_score": {
+      "correlation": 0.01216045425597264,
+      "p_value": 0.9339082253784443,
+      "n_samples": 49
+    },
+    "isway_range_change_vs_rating_change": {
+      "correlation": 0.18303168612435108,
+      "p_value": 0.20809807968555938,
+      "n_samples": 49
+    },
+    "isway_entropy_change_vs_cognitive_dissonance_score": {
+      "correlation": -0.03604751119920888,
+      "p_value": 0.8057608731744644,
+      "n_samples": 49
+    },
+    "isway_entropy_change_vs_rating_change": {
+      "correlation": 0.10463006728835199,
+      "p_value": 0.47431836075987477,
+      "n_samples": 49
+    },
+    "isway_sway_area_change_vs_cognitive_dissonance_score": {
+      "correlation": 0.06237014153109103,
+      "p_value": 0.6703008126382307,
+      "n_samples": 49
+    },
+    "isway_sway_area_change_vs_rating_change": {
+      "correlation": 0.07189628176825866,
+      "p_value": 0.6234844882782455,
+      "n_samples": 49
+    },
+    "isway_mean_distance_change_vs_cognitive_dissonance_score": {
+      "correlation": -0.005516584024394665,
+      "p_value": 0.969991090933459,
+      "n_samples": 49
+    },
+    "isway_mean_distance_change_vs_rating_change": {
+      "correlation": 0.2015221871427708,
+      "p_value": 0.16497525163537677,
+      "n_samples": 49
+    },
+    "isway_path_length_change_vs_cognitive_dissonance_score": {
+      "correlation": -0.021397974473351893,
+      "p_value": 0.8839721601122872,
+      "n_samples": 49
+    },
+    "isway_path_length_change_vs_rating_change": {
+      "correlation": 0.16275928657063254,
+      "p_value": 0.2638345530196863,
+      "n_samples": 49
+    }
+  }
+}

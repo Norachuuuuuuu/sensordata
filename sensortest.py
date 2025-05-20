@@ -1634,7 +1634,9 @@ class SensorDataAnalyzer:
 
     def apply_pca(self, data):
         """
-        Apply PCA to accelerometer data with better error handling
+        Apply PCA to accelerometer data following the covariance matrix approach
+        described in the paper "Balance Assessment Using a Smartwatch Inertial
+        Measurement Unit with Principal Component Analysis for Anatomical Calibration"
 
         Parameters:
         -----------
@@ -1669,22 +1671,61 @@ class SensorDataAnalyzer:
                 else:
                     data = data.reshape(data.shape[0], -1)
 
-            # Standardize the data
-            scaler = StandardScaler()
-            data_scaled = scaler.fit_transform(data)
+            # Center the data (subtract mean)
+            data_centered = data - np.mean(data, axis=0)
 
-            # Apply PCA
-            n_components = min(3, data.shape[1])
-            if n_components < 1:
-                logger.error(f"Not enough dimensions for PCA ({data.shape[1]})")
-                return data
+            # Calculate covariance matrix manually as described in the paper
+            n_samples = data_centered.shape[0]
+            cov_matrix = np.zeros((data.shape[1], data.shape[1]))
 
-            pca = PCA(n_components=n_components)
-            pca_result = pca.fit_transform(data_scaled)
+            for i in range(data.shape[1]):
+                for j in range(data.shape[1]):
+                    # Calculate covariance between dimensions i and j
+                    cov_matrix[i, j] = np.sum(data_centered[:, i] * data_centered[:, j]) / (n_samples - 1)
 
-            logger.info(f"Applied PCA, explained variance: {pca.explained_variance_ratio_}")
+            # Find eigenvalues and eigenvectors of covariance matrix
+            try:
+                eigenvalues, eigenvectors = np.linalg.eigh(cov_matrix)
 
-            return pca_result
+                # Sort eigenvalues and eigenvectors in descending order
+                idx = eigenvalues.argsort()[::-1]
+                eigenvalues = eigenvalues[idx]
+                eigenvectors = eigenvectors[:, idx]
+
+                # Get number of components to keep
+                n_components = min(3, data.shape[1])
+
+                # Extract principal eigenvectors
+                principal_eigenvectors = eigenvectors[:, :n_components]
+
+                # Project data onto principal components
+                pca_result = np.dot(data_centered, principal_eigenvectors)
+
+                # Log eigenvalues as explained variance
+                total_var = eigenvalues.sum()
+                explained_variance_ratio = eigenvalues[:n_components] / total_var
+                logger.info(f"Applied PCA, explained variance: {explained_variance_ratio}")
+
+                return pca_result
+
+            except np.linalg.LinAlgError:
+                logger.error(f"Error computing eigenvalues/eigenvectors, falling back to original implementation")
+
+                # Standardize the data
+                scaler = StandardScaler()
+                data_scaled = scaler.fit_transform(data)
+
+                # Apply PCA using sklearn (fallback)
+                n_components = min(3, data.shape[1])
+                if n_components < 1:
+                    logger.error(f"Not enough dimensions for PCA ({data.shape[1]})")
+                    return data
+
+                pca = PCA(n_components=n_components)
+                pca_result = pca.fit_transform(data_scaled)
+                logger.info(f"Applied PCA (fallback), explained variance: {pca.explained_variance_ratio_}")
+
+                return pca_result
 
         except Exception as e:
             logger.error(f"Error applying PCA: {e}")

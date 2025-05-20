@@ -3,11 +3,11 @@
   "valid": true,
   "num_samples": 1889,
   "duration_seconds": 18.89,
-  "PC1_mean": 6.018360916972792e-17,
-  "PC1_std": 2.268907279404105,
-  "PC1_range": 13.857079669207302,
+  "PC1_mean": 1.8055082750918375e-13,
+  "PC1_std": 7.792070054391779,
+  "PC1_range": 26.835229490396635,
   "PC1_dominant_freq": 0.390625,
-  "PC1_spectral_entropy": -0.26504755059061463,
-  "stride_frequency": 1.1840688912809472,
-  "num_strides": 22
+  "PC1_spectral_entropy": 0.08479649757095063,
+  "stride_frequency": 0.05868544600938967,
+  "num_strides": 1
 }

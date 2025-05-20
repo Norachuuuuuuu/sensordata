@@ -1,7 +1,7 @@
 ANALYSIS SUMMARY REPORT
 ================================================================================
 
-Analysis completed on: 2025-05-03 19:41:36
+Analysis completed on: 2025-05-19 21:50:48
 
 SENSOR DATA ANALYSIS
 --------------------------------------------------------------------------------
@@ -22,10 +22,10 @@ Test Completion Rates:
   POST ISWAY: 49 participants (100.0%)
 
 Key Test Metrics (Mean Values):
-  Pre Itug Stride Frequency: 1.337
-  Post Itug Stride Frequency: 1.353
-  Pre Isway Sway Area: 1214.341
-  Post Isway Sway Area: 1245.491
+  Pre Itug Stride Frequency: 0.147
+  Post Itug Stride Frequency: 0.237
+  Pre Isway Sway Area: 843.059
+  Post Isway Sway Area: 776.055
 
 FOOD RATING ANALYSIS
 --------------------------------------------------------------------------------
